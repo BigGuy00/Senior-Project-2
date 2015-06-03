@@ -8,7 +8,7 @@ public class move : MonoBehaviour {
 	private Vector3 destinationPosition;		// The destination Point
 	private float destinationDistance;			// The distance between myTransform and destinationPosition
  
-	public float moveSpeed;						// The Speed the character will move
+	public static float moveSpeed;						// The Speed the character will move
  
  
  
