@@ -114,7 +114,8 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 					StartCoroutine(CoolDownDmg());
 					CurrentMagic -= 1;
                 	GameObject fireboltSpell = Instantiate(firebolt, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
-					Transform fireboltTransform = fireboltSpell.transform; 
+					Transform fireboltTransform = fireboltSpell.transform;
+                    fireboltSpell.transform.rotation = transform.rotation;
                 	fireboltSpell.GetComponent<Rigidbody>().AddForce(fireboltTransform.forward * fireboltSpeed);
 				}           
 
@@ -127,11 +128,12 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 					CurrentMagic -= 1;
                 	GameObject iceLanceSpell = Instantiate(iceLance, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
                		Transform iceLanceTransform = iceLanceSpell.transform;
+                    iceLanceSpell.transform.rotation = transform.rotation;
                 	iceLanceSpell.GetComponent<Rigidbody>().AddForce(iceLanceTransform.forward * iceLanceSpeed);
 				}              
 
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))       //RockArmor
+            if (Input.GetKeyDown(KeyCode.Alpha3))       //Gust
             {
 				if(!onCD && currentMagic > 0)
 				{
@@ -139,11 +141,12 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 					CurrentMagic -= 1;
                 	GameObject gustSpell = Instantiate(gust, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
                 	Transform gustTransform = gustSpell.transform;
+                    gustSpell.transform.rotation = transform.rotation;
                 	gustSpell.GetComponent<Rigidbody>().AddForce(gustTransform.forward * gustSpeed);
 				}
 
             }
-            if (Input.GetKeyDown(KeyCode.Alpha4))       //Gust
+            if (Input.GetKeyDown(KeyCode.Alpha4))       //Rock Armor
             {
 
 
