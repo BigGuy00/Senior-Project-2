@@ -14,7 +14,7 @@ Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\A
 Loading C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.052 seconds
+- Completed reload, in  0.214 seconds
 desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -22,24 +22,36 @@ desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2dec -> priority: 1 
-  Thread -> id: 2060 -> priority: 1 
+  Thread -> id: 1dec -> priority: 1 
+  Thread -> id: 2dc4 -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
 Shader 'Nature/Terrain/Standard': fallback shader 'Nature/Terrain/Diffuse' not found
-UnloadTime: 4.361368 ms
+UnloadTime: 4.396315 ms
 
-Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 10800.
-Total: 1.707880 ms (FindLiveObjects: 0.547212 ms CreateObjectMapping: 0.150215 ms MarkObjects: 0.717486 ms  DeleteObjects: 0.292033 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 10807.
+Total: 1.691536 ms (FindLiveObjects: 0.557003 ms CreateObjectMapping: 0.153945 ms MarkObjects: 0.707683 ms  DeleteObjects: 0.271504 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 27d0 -> priority: 1 
-  Thread -> id: 2c9c -> priority: 1 
+  Thread -> id: 149c -> priority: 1 
+  Thread -> id: 1a78 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.557681 ms
+UnloadTime: 6.509104 ms
 
-Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 6017.
-Total: 1.797915 ms (FindLiveObjects: 0.297164 ms CreateObjectMapping: 0.070908 ms MarkObjects: 0.392798 ms  DeleteObjects: 1.035644 ms)
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 6024.
+Total: 1.650950 ms (FindLiveObjects: 0.202461 ms CreateObjectMapping: 0.070441 ms MarkObjects: 0.406323 ms  DeleteObjects: 0.971257 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.280803 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 6024.
+Total: 0.698820 ms (FindLiveObjects: 0.275236 ms CreateObjectMapping: 0.063444 ms MarkObjects: 0.339147 ms  DeleteObjects: 0.020059 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 38dc -> priority: 1 
-  Thread -> id: 1274 -> priority: 1 
+  Thread -> id: 201c -> priority: 1 
+  Thread -> id: 2fc8 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.395202 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2785.
+Total: 0.513618 ms (FindLiveObjects: 0.213657 ms CreateObjectMapping: 0.037320 ms MarkObjects: 0.253777 ms  DeleteObjects: 0.007930 ms)
+
