@@ -5,9 +5,11 @@ public class fireboltScript : MonoBehaviour {
     public Vector3 startPosition;
     public float maxDistance=10;
     public int damage;
-
+    public Spells spells;
     void Awake()
     {
+        spells = GameObject.Find("$Player").GetComponent<Spells>();
+        damage = spells.fireboltDamage;
         maxDistance = 10;
 
     }

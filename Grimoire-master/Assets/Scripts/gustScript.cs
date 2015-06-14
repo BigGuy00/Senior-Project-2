@@ -5,9 +5,11 @@ public class gustScript : MonoBehaviour {
     public Vector3 startPosition;
     public float maxDistance = 15;
     public int damage;
-
+    public Spells spells;
     void Awake()
     {
+        spells = GameObject.Find("$Player").GetComponent<Spells>();
+        damage = spells.gustDamage;
         maxDistance = 15;
 
     }

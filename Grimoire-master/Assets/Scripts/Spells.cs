@@ -31,7 +31,7 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
     public float fireboltRange;
     public float fireboltSpeed;
     public float fireboltManaCost;
-    public float fireboltDamage;
+    public int fireboltDamage;
     public float fireboltCastTime;
     public float fireboltCooldown;
 
@@ -39,7 +39,7 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
     public float iceLanceRange;
     public float iceLanceSpeed;
     public float iceLanceManaCost;
-    public float iceLanceDamage;
+    public int iceLanceDamage;
     public float iceLanceCastTime;
     public float iceLanceCooldown;
     public float iceLanceHealth;
@@ -56,10 +56,11 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
     public float gustRange;
     public float gustSpeed;
     public float gustManaCost;
-    public float gustDamage;
+    public int gustDamage;
     public float gustCastTime;
     public float gustCooldown;
 
+    public Vector3 spellOffset = new Vector3(0, .5f, 0);
 
     public bool isCasting;
 
@@ -113,7 +114,7 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 				{
 					StartCoroutine(CoolDownDmg());
 					CurrentMagic -= 1;
-                	GameObject fireboltSpell = Instantiate(firebolt, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
+                	GameObject fireboltSpell = Instantiate(firebolt, transform.position + spellOffset, Quaternion.identity) as GameObject;
 					Transform fireboltTransform = fireboltSpell.transform;
                     fireboltSpell.transform.rotation = transform.rotation;
                 	fireboltSpell.GetComponent<Rigidbody>().AddForce(fireboltTransform.forward * fireboltSpeed);
@@ -126,7 +127,7 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 				{
 					StartCoroutine(CoolDownDmg());
 					CurrentMagic -= 1;
-                	GameObject iceLanceSpell = Instantiate(iceLance, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
+                    GameObject iceLanceSpell = Instantiate(iceLance, transform.position + spellOffset, Quaternion.identity) as GameObject;
                		Transform iceLanceTransform = iceLanceSpell.transform;
                     iceLanceSpell.transform.rotation = transform.rotation;
                 	iceLanceSpell.GetComponent<Rigidbody>().AddForce(iceLanceTransform.forward * iceLanceSpeed);
@@ -139,7 +140,7 @@ Cooldown Time: One Round, Distance 45 yards, Damage: 8 Wind Damage.
 				{
 					StartCoroutine(CoolDownDmg());
 					CurrentMagic -= 1;
-                	GameObject gustSpell = Instantiate(gust, transform.position + new Vector3(0, 1, .5f), Quaternion.identity) as GameObject;
+                    GameObject gustSpell = Instantiate(gust, transform.position + spellOffset, Quaternion.identity) as GameObject;
                 	Transform gustTransform = gustSpell.transform;
                     gustSpell.transform.rotation = transform.rotation;
                 	gustSpell.GetComponent<Rigidbody>().AddForce(gustTransform.forward * gustSpeed);
