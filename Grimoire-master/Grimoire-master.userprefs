@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Fading.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Fading.cs" Line="7" Column="32" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="49" Column="30" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\fireboltScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\changeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Boss_Sound.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Background_Sound.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\nextLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spells.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\gustScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

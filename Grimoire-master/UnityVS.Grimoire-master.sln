@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Grimoire-master.CSharp.Editor", "UnityVS.Grimoire-master.CSharp.Editor.csproj", "{CD309837-A99B-9643-0190-C79822A1E3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Grimoire-master.CSharp.Plugins", "UnityVS.Grimoire-master.CSharp.Plugins.csproj", "{962FA863-0CF4-BB00-CF49-6346D760D19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Grimoire-master.CSharp", "UnityVS.Grimoire-master.CSharp.csproj", "{042451E0-3B4A-847D-9165-E2C269848603}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD309837-A99B-9643-0190-C79822A1E3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD309837-A99B-9643-0190-C79822A1E3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD309837-A99B-9643-0190-C79822A1E3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD309837-A99B-9643-0190-C79822A1E3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{962FA863-0CF4-BB00-CF49-6346D760D19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{962FA863-0CF4-BB00-CF49-6346D760D19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{962FA863-0CF4-BB00-CF49-6346D760D19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{962FA863-0CF4-BB00-CF49-6346D760D19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042451E0-3B4A-847D-9165-E2C269848603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042451E0-3B4A-847D-9165-E2C269848603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042451E0-3B4A-847D-9165-E2C269848603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042451E0-3B4A-847D-9165-E2C269848603}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
