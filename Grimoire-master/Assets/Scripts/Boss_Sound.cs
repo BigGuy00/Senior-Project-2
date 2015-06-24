@@ -5,7 +5,7 @@ public class Boss_Sound : MonoBehaviour {
 	
 	void Start () {
 		
-		var go = GameObject.Find ("GameMusic");
+		GameObject go = GameObject.Find ("GameMusic");
 		
 		if (go) {
 			Destroy(go);
