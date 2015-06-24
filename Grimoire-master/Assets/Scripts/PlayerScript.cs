@@ -43,10 +43,21 @@ public class PlayerScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
 			
 	}
 
-	void OnTriggerStay(Collider other)
+	void OnTriggerStay(Collider other){
+
+		if(currentHealth <= 0)
+		{
+			Destroy(gameObject);
+			Application.LoadLevel (6);
+		}			
+	}
+
+	/*void OnTriggerStay(Collider other)
+>>>>>>> 417e3ad5edb08b6e916cac042a87d6b030630805
 	{
 		if(other.name == "Health")
 		{
@@ -64,7 +75,10 @@ public class PlayerScript : MonoBehaviour {
 				CurrentHealth -= 1;
 			}
 		}
+<<<<<<< HEAD
 	}
+=======
+	}*/
 
 	IEnumerator CoolDownDmg()
 	{
@@ -86,4 +100,15 @@ public class PlayerScript : MonoBehaviour {
 	{
 		return (x - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 	}
+
+	void Hit(int dmg)
+	{
+		if(!onCD && currentHealth > 0)
+		{
+			StartCoroutine(CoolDownDmg());
+			CurrentHealth -= dmg;
+			Debug.Log("bob saget");
+		}
+	}
+
 }

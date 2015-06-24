@@ -33,6 +33,9 @@ public class Enemy : MonoBehaviour {
     public float attackTimeStamp;
     public float distanceFromTarget;
     public Vector3 vertOffset = new Vector3(0, .4f, 0);
+
+	public int AttackDamage; 
+
    
 
     // Use this for initialization
@@ -44,7 +47,11 @@ public class Enemy : MonoBehaviour {
         atLocation = true;
         player = GameObject.Find("$Player").GetComponent<PlayerScript>();
         health = 5;
+
         canAttack = true;
+
+		canAttack = true;
+
     }
 
     // Update is called once per frame
@@ -166,15 +173,18 @@ public class Enemy : MonoBehaviour {
 
     void detectTarget()
     {
-        if (Physics.Raycast(transform.position, Vector3.forward + vertOffset, out hit, aggroDistance))
+        
+        if (Physics.Raycast(transform.position+ vertOffset, Vector3.forward + vertOffset, out hit, aggroDistance))
         {
+            
             if (hit.collider.tag == "Player" )
             {
+                
                 target = hit.collider.gameObject;
                 state = 2;
             }
         }
-        if (Physics.Raycast(transform.position, leftForwardRay + vertOffset, out hit, aggroDistance))
+        if (Physics.Raycast(transform.position + vertOffset, leftForwardRay + vertOffset, out hit, aggroDistance))
         {
             if (hit.collider.tag == "Player")
             {
@@ -182,7 +192,7 @@ public class Enemy : MonoBehaviour {
                 state = 2;
             }
         }
-        if (Physics.Raycast(transform.position, rightForwardRay + vertOffset, out hit, aggroDistance))
+        if (Physics.Raycast(transform.position + vertOffset, rightForwardRay + vertOffset, out hit, aggroDistance))
         {
             if (hit.collider.tag == "Player")
             {
@@ -221,16 +231,23 @@ public class Enemy : MonoBehaviour {
 
     void OnDrawGizmos()
     {
-        
+       
     }
 
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "Player")
         {      
+
           
             //Damage Player
            
+
+
+            //Damage Player
+			col.gameObject.SendMessage("Hit", AttackDamage);  
+
+
         }  
     }
 
@@ -247,4 +264,8 @@ public class Enemy : MonoBehaviour {
     {
         health -= dmg;
     }
+
 }
+
+
+

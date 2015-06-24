@@ -1,5 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Boss_Sound.cs">
     <Files>
       <File FileName="Assets\Scripts\Boss_Sound.cs" Line="8" Column="34" />
@@ -9,6 +10,23 @@
       <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Spells.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\changeScene.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Background_Sound.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Background_Sound.cs" Line="8" Column="13" />
+      <File FileName="Assets\Scripts\Boss_Sound.cs" Line="8" Column="13" />
+      <File FileName="Assets\Scripts\Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TeamIntroFade.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fading.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\fireboltScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\changeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\nextLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Spells.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\gustScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\move.cs" Line="1" Column="1" />
+>>>>>>> 417e3ad5edb08b6e916cac042a87d6b030630805
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

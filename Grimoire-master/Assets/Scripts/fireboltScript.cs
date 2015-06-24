@@ -36,7 +36,11 @@ public class fireboltScript : MonoBehaviour {
     {
         if(col.gameObject.tag == "Enemy")
         {
+
             col.gameObject.SendMessage("Hit", damage);
+
+			col.gameObject.SendMessage("Hit", damage);
+
             
             Destroy(gameObject);
         } 

@@ -22,6 +22,7 @@ desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
 Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Public\Documents\Grimoire-master\test_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
+<<<<<<< HEAD
   Thread -> id: 1dec -> priority: 1 
   Thread -> id: 2dc4 -> priority: 1 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
@@ -55,3 +56,7 @@ UnloadTime: 3.395202 ms
 Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 2785.
 Total: 0.513618 ms (FindLiveObjects: 0.213657 ms CreateObjectMapping: 0.037320 ms MarkObjects: 0.253777 ms  DeleteObjects: 0.007930 ms)
 
+=======
+  Thread -> id: 230c -> priority: 1 
+  Thread -> id: 4c0 -> priority: 1 
+>>>>>>> 417e3ad5edb08b6e916cac042a87d6b030630805
